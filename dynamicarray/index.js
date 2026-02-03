@@ -3,9 +3,17 @@ const inputText = document.getElementById("numbers");
 
 let arr = [];
 
-function shownumbers(){
+function showNumbers(){
 
-    arr.push(1);
+    let newInt = parseInt(numbers.value);
 
-    textElement.innerHTML = numbers.value;
+    if(typeof newInt === 'number' && !Number.isNaN(newInt)){
+
+        arr.push(newInt);
+
+        textElement.innerHTML = arr.join("<br>");
+    }else{
+        alert("Error: Not a number!")
+    }
+
 }
