@@ -1,7 +1,7 @@
 const textElement = document.getElementById("element1");
 const inputText = document.getElementById("numbers");
 
-let arr1 = [];
+let arr = [];
 
 function showNumbers(){
 
