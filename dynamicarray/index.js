@@ -1,11 +1,11 @@
-const textElement = document.getElementById("element1");
+const textElement = document.getElementById("elements");
 const inputText = document.getElementById("numbers");
 
 let arr = [];
 
 function showNumbers(){
 
-    let newInt = parseInt(numbers.value);
+    let newInt = parseInt(inputText.value);
 
     if(typeof newInt === 'number' && !Number.isNaN(newInt)){
 
